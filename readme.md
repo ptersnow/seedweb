@@ -13,6 +13,7 @@ O projeto, possuí como objetivo ...
 
 ## 1. Requisitos
 
+o projeto ultiliza o laravel 5.8 e o voyager 1.2
 - PHP >= 7.2.0
 - BCMath PHP
 - Ctype PHP
@@ -58,9 +59,9 @@ O projeto, possuí como objetivo ...
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
-    DB_DATABASE=NOMEDOBANCO
-    DB_USERNAME=USUARIO
-    DB_PASSWORD=SENHA
+    DB_DATABASE=seedweb
+    DB_USERNAME=root
+    DB_PASSWORD=
 
 
 **2.5.** Criação de nova chave de criptografia:
@@ -85,7 +86,8 @@ O projeto, possuí como objetivo ...
 ```
 
 ## 3. Acesso
-
+comando para criar usúario administrador  
+```php artisan voyager:admin seuemail@email.com --create```
 > Caso a instalação tenha sido realizada em um host local, troque o domínio por **localhost:8000** ou **127.0.0.1:8000**.
 
 **3.1.** Acesso à área pública da aplicação:
