@@ -36,11 +36,11 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+            'host' => env('MAIL_HOST', 'smtp.cloudmta.net'),
             'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME'),
-            'password' => env('MAIL_PASSWORD'),
+            'username' => env('MAIL_USERNAME', 'c9b06dea731b2f94'),
+            'password' => env('MAIL_PASSWORD', 'gPgkbhSi72q7JLym6rGGqAJv'),
             'timeout' => null,
             'auth_mode' => null,
         ],
@@ -84,8 +84,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'no-reply@seedweb.herokuapp.com'),
+        'name' => env('MAIL_FROM_NAME', 'SeedWeb'),
     ],
 
     /*
