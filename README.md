@@ -44,19 +44,16 @@ php artisan storage:link
 
 **2.4.** Faça uma cópia do arquivo `.env.example` e renomeie para `.env`:
 
-**2.6.** Crie um banco de dados no MariaDB ou MySQL.
+**2.6.** Crie o arquivo do banco de dados dentro da pasta database
 
-> Sugestão de definição de collation: **utf8mb4_general_ci**
+```bash
+    touch database/database.sqlite
+```
 
 
 **2.7.** Configure a conexão com os dados do banco de dados no arquivo `.env`:
 
-    DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
-    DB_DATABASE=seedweb
-    DB_USERNAME=root
-    DB_PASSWORD=
+    DB_CONNECTION=sqlite
 
 
 **2.5.** Criação de nova chave de criptografia:
