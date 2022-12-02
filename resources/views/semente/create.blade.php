@@ -47,7 +47,7 @@
         </div>
         <div class="panel-body">
             @if(isset($semente->imagem))
-                <img src="{{Voyager::image( $semente->imagem ) }}" height="150" />
+                <img src="{{ asset( $semente->imagem ) }}" height="150" />
                 <input type="hidden" name="imagem" value="{{$semente->imagem}}">
             @endif
             <input type="file" id="input-image" name="image">
