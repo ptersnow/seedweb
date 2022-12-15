@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\SementeController;
+use App\Models\Semente;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +24,17 @@ Route::get('/', [App\Http\Controllers\SementeController::class, 'index'])->name(
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+
+Route::get('/edit', function () {
+
+    $semente = Semente::all();
+    return view('mod.edit', compact('semente'));
+});
+
+
+
+
 
 //Auth::routes();
 

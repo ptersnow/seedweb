@@ -54,6 +54,7 @@
         </div>
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
+    <button type="submit" class="btn btn-info" action="{{route('sementes')}}">Cancelar</button>
   </form>
 
 @endsection

@@ -5406,13 +5406,15 @@ a.close.disabled {
 .modal {
   position: fixed;
   top: 0;
-  left: 0;
+  
   z-index: 1050;
   display: none;
-  width: 100%;
+  width: 95%;
   height: 100%;
   overflow: hidden;
   outline: 0;
+  align-items: center;
+
 }
 
 .modal-dialog {
@@ -5509,7 +5511,7 @@ a.close.disabled {
 
 .modal-header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
   border-bottom: 1px solid #dee2e6;
@@ -5556,7 +5558,7 @@ a.close.disabled {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    /* max-width: 500px;*/
     margin: 1.75rem auto;
   }
 
@@ -10013,4 +10015,6 @@ h3 {
     color: inherit;
     border-color: #dee2e6;
   }
+
+  
 }
